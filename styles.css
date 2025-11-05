@@ -500,3 +500,64 @@ button:hover,
     font-size: 1.1em;
   }
 }
+@media (min-width: 720px)
+{ /Cuando el ancho de la pantalla >720 px, se aplica lo siguiente/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;/Ordena los elementos en filas horizontales/
+        justify-content: space-between; /Separar elementos y los mande a una esquina a cada uno/
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px ;
+    }
+
+    #somos-ecovolt .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-ecovolt .texto{
+        display: flex;
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-ecovolt h2{
+        margin-top: 0;
+    }
+
+    #somos-ecovolt .img-container{
+        background-image: url(images/PetCare.jpg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
