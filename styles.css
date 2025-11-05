@@ -201,3 +201,106 @@ header a:hover{
     gap: 30px;
     margin-top: 40px;
 }
+
+.heuristica-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 20px rgba(119, 192, 67, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.heuristica-card::before {
+    content: attr(data-number);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #7CD4C7;
+    opacity: 0.3;
+}
+
+.heuristica-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(119, 192, 67, 0.25);
+    border-color: #7CD4C7;
+}
+
+.heuristica-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heuristica-card h3 {
+    color: #7CD4C7;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.heuristica-card p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+#calla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#calla {
+  background: linear-gradient(120deg, #e0ffe6 0%, #b6f0c1 60%, #d0eaff 100%);
+  padding: 70px 0 60px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.calla-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+#calla h2 {
+  font-size: 2.3em;
+  color: #222;
+  margin-bottom: 0;
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+#calla h2{
+    font-size: 9vw;
+}
+
+#calla button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(100,100,100);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+}
